@@ -1,6 +1,7 @@
 {
   "people": [
     {
+      "id": "1",
       "firstName": "Martin",
       "lastName": "Balke",
       "_team": "Blue Otter",
@@ -8,6 +9,7 @@
       "likes": "dogs"
     },
     {
+      "id": "2",
       "firstName": "Jessica",
       "lastName": "Elliot",
       "_team": "Blue Otter",
@@ -15,6 +17,7 @@
       "likes": "cats"
     },
     {
+      "id": "3",
       "firstName": "Anna",
       "lastName": "Something",
       "_team": "Red Heron",
@@ -22,6 +25,7 @@
       "likes": "both"
     },
     {
+      "id": "4",
       "firstName": "James",
       "lastName": "Dunn",
       "_team": "Yellow Rhino",
@@ -29,6 +33,7 @@
       "likes": "dogs"
     },
     {
+      "id": "5",
       "firstName": "Nadya",
       "lastName": "Ilinskaya",
       "_team": "Red Heron",
@@ -36,6 +41,7 @@
       "likes": "both"
     },
     {
+      "id": "6",
       "firstName": "Meron",
       "lastName": "Sabani",
       "_team": "Yellow Rhino",
@@ -43,18 +49,29 @@
       "likes": "none"
     },
     {
+      "id": "7",
       "firstName": "Morgan",
       "lastName": "Shaw",
       "_team": "Yellow Rhino",
       "birthday": "04/18/95",
       "likes": "both"
+    }
+],
+"teams": [
+    {
+      "id": "1",
+      "name": "Red Heron",
+      "color": "red"
     },
     {
-      "firstName": "Sonia",
-      "lastName": "Kandah",
-      "_team": "Blue Otter",
-      "birthday": "01/01/95",
-      "likes": "cats"
+      "id": "2",
+      "name": "Blue Otter",
+      "color": "blue"
+    },
+    {
+      "id": "3",
+      "name": "Yellow Rhino",
+      "color": "yellow"
     }
 ]
 }

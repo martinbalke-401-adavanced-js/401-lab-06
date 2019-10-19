@@ -1,11 +1,12 @@
 {
-  "name": "demo",
+  "name": "lab-06",
   "version": "1.0.0",
   "description": "",
   "main": "players-schema.js",
   "scripts": {
     "test": "jest --verbose",
-    "test-watch": "jest --watchAll --verbose"
+    "test-watch": "jest --watchAll --verbose",
+    "lint": "eslint '**/*.js'"
   },
   "jest": {
     "testEnvironment": "node"

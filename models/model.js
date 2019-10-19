@@ -1,21 +1,48 @@
 'use strict';
 
-const validate = require('jsonschema').validate;
+// const validate = require('jsonschema').validate;
+const fetch = require('node-fetch');
+
 
 class Model {
-  constructor(schema) {
+  constructor(schema, url) {
     this.schema = schema;
+    this.url = url;
   }
 
-  get(_id) {}
+  get(id) {
+    const url = `${this.url}/${id}`;
+    return fetch(url)
+      .then( (res) => res.json())
+      .catch( (error) => console.error(error));
+  }
 
-  getFromField(query) {}
+  getFromField(query) {
+    const url = `${this.url}?${query}`;
+    return fetch(url)
+      .then((res) => res.json())
+      .catch((error) => console.error(error));
+  }
 
-  create(record) {}
+  create(record) {
+    return fetch(this.url, { method: 'POST', body: record })
+      .then((res) => res.json())
+      .catch((error) => console.error(error));
+  }
 
-  update(_id, record) {}
+  update(id, record) {
+    const url = `${this.url}/${id}`;
+    return fetch(url, { method: 'PUT', body: record })
+      .then((res) => res.json())
+      .catch((error) => console.error(error));
+  }
 
-  delete(_id) {}
+  delete(id) {
+    const url = `${this.url}/${id}`;
+    return fetch(url, { method: 'DELETE'})
+      .then((res) => res.json())
+      .catch((error) => console.error(error));
+  }
 
   count(query) {}
 

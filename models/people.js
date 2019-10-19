@@ -15,9 +15,11 @@ const schema = {
   },
 };
 
+const url = 'http://localhost:3000/people';
+
 class People extends Model {
-  constructor(file) {
-    super(schema);
+  constructor() {
+    super(schema,url);
   }
 }
 

@@ -8,13 +8,15 @@ const schema = {
     type: String,
     required: true,
     lowercase: true,
-    enum: ['red', 'blue', 'yellow'],
+    enum: ['red', 'blue', 'yellow', 'purple'],
   },
 };
 
+const url = 'http://localhost:3000/teams';
+
 class Teams extends Model {
   constructor() {
-    super(schema);
+    super(schema, url);
   }
 }
 
